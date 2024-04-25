@@ -1,0 +1,333 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700&display=swap');
+
+* {
+   font-family: Lato;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background-color: #fff;
+}
+
+#header .logo {
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color:rgb(8, 7, 7);
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #b92020;
+    color: #fff;
+}
+
+#container {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+#sec1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#para1 {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+#para2{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+#sec2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    right: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#imggif {
+    margin-top: 10px;
+    position: relative;
+    left: 5vw
+}
+
+#img2 {
+    position: relative;
+    left: 6vw;
+}
+
+footer {
+    position: relative;
+}
+
+
+/* Default styles for larger screens */
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    /* Adjustments to header */
+    header {
+        width: 400px;
+        padding: 10px;
+    }
+
+    /* Center the logo in header */
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    /* Adjust the size and position of the main text in section 1 */
+    #col1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Reduce size of Explore button */
+    .btn-dark {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    /* Adjust video size and position in section 2 */
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust text alignment and size in section 2 */
+    #para2 {
+        text-align: center;
+        font-size: 14px;
+    }
+    .col-5 h3 {
+        font-size: 10px; /* Increase font size */
+        color: red; /* Change text color for visibility */
+        margin-top: 10px; /* Add space above the heading */
+        text-align: center; /* Center align the heading */
+    }
+    body{
+        height: 1500px;
+    }
+    #para1{
+        /* padding-top:380px; */
+       text-align: justify;
+       /* margin: 20px; */
+       /* height: 900px; */
+    }
+    #col1 {
+        width: 100%; /* Example: Make col1 occupy full width at 400px or less */
+    }
+
+    .btn {
+        padding: 10px; /* Example: Increase button padding for better touch targets */
+    }
+    .container1 h3 {
+        /* Adjust padding for smaller screens */
+        /* padding: 80px; */
+        padding: 50px;
+        margin: 150px;
+
+    }
+    body{
+        height: 2500px;
+    }
+    .row .col-5 h3{
+          margin: 80px;
+    }
+    /* Define the media query for screens up to 400px */
+
+    /* Target the video element */
+    #lander video {
+        /* Adjust video dimensions for smaller screens */
+        height: 300px;
+        width: 100%;
+    }
+
+    /* Adjust the column layout */
+    .col-6 {
+        /* Set full width for each column on small screens */
+        width: 100%;
+    }
+
+    /* Adjust margin and padding for text content */
+    .mt-5,
+    .pt-5 {
+        /* Reduce top margin and padding for text content */
+        margin-top: 1rem !important;
+        padding-top: 1rem !important;
+    }
+
+    /* Center align text content */
+    .text-center {
+        /* Apply center alignment */
+        text-align: center;
+ 
+    }
+    footer#foot {
+        text-align: center;
+    }
+
+    /* Reduce padding for the social media section */
+    footer#foot section.d-flex {
+        padding: 2rem 0;
+    }
+
+    /* Reduce margin for the social media section */
+    footer#foot section.d-flex > div.me-5 {
+        margin: 0;
+    }
+
+    /* Adjust the font size and padding for the social media links */
+    footer#foot section.d-flex a.text-reset {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    /* Center-align text within the links section */
+    footer#foot section.container.text-center {
+        text-align: center;
+    }
+
+    /* Reduce padding for grid columns in the links section */
+    footer#foot section.container.text-center .row .col-md-3,
+    footer#foot section.container.text-center .row .col-md-2,
+    footer#foot section.container.text-center .row .col-md-4 {
+        padding-bottom: 1rem;
+    }
+
+    /* Reduce font size for headings in the links section */
+    footer#foot section.container.text-center .row h6 {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust font size and margin for links in the links section */
+    footer#foot section.container.text-center .row a.text-reset {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Reduce padding for the copyright section */
+    footer#foot div.text-center p {
+        padding: 0.5rem 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Example: Apply styles for screens 400px and below */
+
+
+   
+
+   
+
+    /* Adjust header styles for smaller screens */
+   
+
+    /* Modify footer styles for smaller screens */
+    

@@ -1,0 +1,246 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Lato:ital,wght@1,300;1,400;1,700&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+}
+
+#header .logo {
+    color: #f0f2f4;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #e7eef0;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #a32216;
+    color: #fff;
+}
+
+#section {
+    position: relative;
+    width: 100%;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#heading {
+    font-weight: 600;
+    color: #fff;
+    background-color: #b55451;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#cont2 {
+    position: relative;
+    top: 10vh;
+    margin: 20vh;
+
+}
+
+.bank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin-left: 5vw;
+    height: 25vw;
+    border-radius: 20px;
+    background: rgba(174, 69, 69, 0.533);
+    box-shadow: 0 4px 30px rgba(34, 34, 34, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 3px solid rgba(200, 18, 18, 0.803);
+}
+
+.container {
+    width: 25vw;
+}
+
+h3 {
+    color: #bdcdcf;
+}
+
+p {
+    color: #bdcdcf;
+    font-size: 20px;
+}
+
+
+
+/* home.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Set your desired background color */
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Main Section Styles */
+section {
+    padding: 20px;
+}
+
+
+/* Media Query for Screens <= 400px */
+@media (max-width: 450px) {
+    /* Media query for screens up to 400px */
+
+    /* Override Bootstrap grid classes to stack columns vertically */
+    .col-6 {
+        width: 100%; /* Set full width for columns on smaller screens */
+    }
+
+    /* Adjust spacing and alignment for stacked columns */
+    #cont2 .col-6 {
+        margin-bottom: 20px; /* Add spacing between stacked sections */
+    }
+
+    /* Center align text within the stacked sections */
+    #cont2 .col-6 .bank {
+        text-align: center;
+    }
+
+    /* Adjust the width and margin of buttons for better display on smaller screens */
+    #cont2 .col-6 .bttn .btn {
+        width: 80%; /* Adjust button width */
+        margin: 0 auto; /* Center align buttons */
+    }
+
+
+    header {
+        padding: 10px;
+    }
+    header .logo {
+        font-size: 1.5em; /* Decrease logo font size */
+    }
+    #header ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        margin-top: 10px;
+    }
+    #header ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #section {
+        top: 15vh; /* Adjust section top positioning */
+    }
+    .bank {
+        /* width: 90%; Adjust bank width for smaller screens */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+         height: auto; /*Make bank height responsive */
+    }
+    .container {
+        width: 390px; /* Adjust container width for smaller screens */
+    }
+    h3, p {
+        font-size: 16px; /* Decrease font sizes for readability */
+    }
+    .cont2 .row {
+        flex-direction: column;
+        margin-left: 0; /* Remove the left margin to center the boxes */
+    }
+
+    /* Center align each bank box */
+    .bank {
+        /* margin:  auto; Center the bank boxes */
+        width: 350px; /* Adjust width to fit the smaller screen */
+        align-items: center;
+        padding-left: 0px;
+    }
+    body img{
+        height: 1200px;
+    }
+    #cont2{
+        /* margin-top: 10px; */
+        padding-top: 10px;
+        /* /* padding: 40px; */
+        margin: 0px; 
+        margin-top: auto;
+    }
+}

@@ -1,0 +1,151 @@
+/* css of register */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    height: 100vw;
+    width: 100%;
+    background-color: gray;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    /* background-color: gray; */
+
+
+}
+
+#header .logo {
+    color: #126186;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #026c8a;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #157baa;
+    color: #fff;
+}
+
+#span {
+    color: #13889c;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin-left: 5vw;
+    height: 35vw;
+
+}
+
+.container {
+    width: 20vw;
+    border-radius: 5px groove red ;
+
+}
+
+.row {
+    position: relative;
+    top: 7vw;
+}
+
+#sgup {
+    position: relative;
+    
+    top: -8vw;
+}
+
+/* Media query for screens up to 400px */
+/* Adjust styles for screens narrower than 400px */
+@media (max-width: 400px) {
+    /* Style adjustments for the video */
+    video {
+        height: 300px; /* Decrease video height */
+        width: 100%;   /* Ensure video width spans the full width */
+    }
+
+    /* Style adjustments for the registration form */
+    .login {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .container {
+        padding: 30px; /* Adjust container padding */
+    }
+
+    .bttn {
+        margin-top: 20px; /* Adjust button margin */
+    }
+
+    button {
+        padding: 10px; /* Adjust button padding */
+        font-size: 14px; /* Decrease button font size */
+    }
+   
+    .login {
+        padding: 20px; /* Reduce padding for the login container */
+    }
+
+    .container {
+        padding: 30px; /* Adjust container padding */
+    }
+
+    .form-control {
+        font-size: 14px; /* Decrease font size of form controls */
+    }
+
+    .bttn {
+        margin-top: 20px; /* Adjust button margin */
+    }
+
+    button {
+        padding: 10px; /* Adjust button padding */
+        font-size: 14px; /* Decrease button font size */
+    }
+}
+
